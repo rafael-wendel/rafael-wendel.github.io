@@ -1,11 +1,10 @@
-/* --- General Pen Styles --- */
 body{
 	font-family: Georgia, serif;
 	color: #333;
 	font-size: 1.4rem;
 	line-height: 2rem;
 	overflow-y: hidden;
-	margin: 0;
+	margin: -2px;
 }
 h1{
 	font-size: 2.6rem;
@@ -19,24 +18,18 @@ h1{
 main{
 	padding: 1% 0;
 	position: relative;
+		height: 100%;
 	background: #f5f5f5;
 	box-shadow: 0px -10px 60px rgba(0,0,0,0.25);
-    height: 100%;
 }
-/* --- Important Pen Styles --- */
 
 .hero{
 	overflow: hidden;
-	padding-bottom: 70%;
+	padding-bottom: 40%;
 }
 .hero img{
 	position: fixed;
-	top: 0%;
-    left: 50%;
-	max-width: 200%;
-	width: 100%;
-	transform: translateX(-50%);
-    will-change: -webkit-filter, filter, transform;
+	max-width: 100%;
 }
 
 .parallax {
@@ -45,22 +38,13 @@ main{
   overflow-x: hidden;
   overflow-y: auto;
 }
-.parallax__layer {
+.parallax-layer {
   position: absolute;
-  top: -10px;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
 }
-.parallax__layer--base {
-  transform: translateZ(0);
-}
-.parallax__layer--back {
-  transform: translateZ(-1px);
-}
-.parallax__layer--back {
-  transform: translateZ(-1px) scale(2);
-}
-.parallax__layer--deep {
-  transform: translateZ(-2px) scale(3);
+.parallax-back {
+  transform: translateZ(-1.3px) scale(2.3);
 }
